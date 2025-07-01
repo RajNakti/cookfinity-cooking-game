@@ -17,9 +17,6 @@ export default function Home() {
                   width={120}
                   height={120}
                   className="h-20 w-20 md:h-28 md:w-28 lg:h-32 lg:w-32"
-                  onError={(e) => {
-                    (e.target as HTMLImageElement).style.display = 'none';
-                  }}
                 />
               </div>
             </div>

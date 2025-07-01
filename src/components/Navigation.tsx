@@ -27,9 +27,6 @@ export default function Navigation() {
                 width={32}
                 height={32}
                 className="h-8 w-8"
-                onError={(e) => {
-                  (e.target as HTMLImageElement).style.display = 'none';
-                }}
               />
               <span className="text-xl font-bold text-white">Cookfinity</span>
             </Link>

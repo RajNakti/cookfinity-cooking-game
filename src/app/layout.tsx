@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Navigation from "@/components/Navigation";
@@ -18,7 +18,11 @@ export const metadata: Metadata = {
   description: "Learn to cook real recipes through an interactive virtual kitchen game. Drag, drop, chop, mix, and cook ingredients in a fun, game-like experience.",
   keywords: "cooking game, virtual kitchen, recipes, interactive cooking, learn to cook",
   authors: [{ name: "Cookfinity Team" }],
-  viewport: "width=device-width, initial-scale=1",
+};
+
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
 };
 
 export default function RootLayout({
