@@ -22,7 +22,7 @@ git push origin main
 3. Choose your GitHub repository
 4. Configure build settings:
    - **Build command**: `npm run build`
-   - **Publish directory**: `.next`
+   - **Publish directory**: `out`
    - **Node version**: 18 or higher
 
 ### Step 3: Environment Variables

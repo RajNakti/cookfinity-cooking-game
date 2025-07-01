@@ -3,7 +3,6 @@
 import Link from 'next/link';
 import { useState } from 'react';
 import { Menu, X, Home, Book, Play, Trophy } from 'lucide-react';
-import Image from 'next/image';
 
 export default function Navigation() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -22,12 +21,15 @@ export default function Navigation() {
           {/* Logo */}
           <div className="flex items-center">
             <Link href="/" className="flex items-center space-x-2">
-              <Image
+              <img
                 src="/uniquelogo.png"
                 alt="Cookfinity Logo"
                 width={32}
                 height={32}
                 className="h-8 w-8"
+                onError={(e) => {
+                  (e.target as HTMLImageElement).style.display = 'none';
+                }}
               />
               <span className="text-xl font-bold text-white">Cookfinity</span>
             </Link>

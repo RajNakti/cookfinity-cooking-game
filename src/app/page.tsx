@@ -1,5 +1,4 @@
 import Link from 'next/link';
-import Image from 'next/image';
 import { Play, Book, Trophy } from 'lucide-react';
 
 export default function Home() {
@@ -12,12 +11,15 @@ export default function Home() {
           <div className="text-center">
             <div className="flex justify-center mb-8">
               <div className="bg-gradient-to-br from-yellow-400 to-orange-400 p-6 md:p-8 rounded-full shadow-2xl">
-                <Image
+                <img
                   src="/uniquelogo.png"
                   alt="Cookfinity Logo"
                   width={120}
                   height={120}
                   className="h-20 w-20 md:h-28 md:w-28 lg:h-32 lg:w-32"
+                  onError={(e) => {
+                    (e.target as HTMLImageElement).style.display = 'none';
+                  }}
                 />
               </div>
             </div>

@@ -3,7 +3,6 @@
 import { useState, useEffect } from 'react';
 import { Play, Clock, Users, Star } from 'lucide-react';
 import Link from 'next/link';
-import Image from 'next/image';
 import { Recipe } from '@/types/recipe';
 import SpoonacularAPI from '@/lib/api';
 
@@ -33,7 +32,7 @@ export default function PlayPage() {
         <div className="absolute inset-0 bg-black opacity-10"></div>
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <div className="flex justify-center mb-6">
-            <Image
+            <img
               src="/uniquelogo.png"
               alt="Cookfinity Logo"
               width={64}
@@ -72,7 +71,7 @@ export default function PlayPage() {
             
             <div className="bg-gradient-to-br from-blue-400 to-blue-600 rounded-lg p-6 text-white text-center">
               <div className="bg-white bg-opacity-20 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
-                <Image
+                <img
                   src="/uniquelogo.png"
                   alt="Cookfinity Logo"
                   width={32}
